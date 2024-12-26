@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 struct Ret{ struct {long n;}; } will_it_run( bool y_or_n ) {
     typeof(y_or_n) should_segfault = { ! y_or_n };
